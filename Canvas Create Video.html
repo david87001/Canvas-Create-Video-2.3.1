@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Canvas Create Video</title>
+	<meta name="author" content="林冠宇(LIN,GUAN-YU)">
+	<style>
+		video {
+			visibility: hidden;
+		}
+
+		#ccvCanvas_1 {
+			background: rgb(165, 165, 165);
+		}
+	</style>
+	<script src="Don Don Donuts.js"></script>
+	<script src=""></script>
+	<script src="VideoBuilder-master\base64.js"></script>
+	<script src="VideoBuilder-master\video-builder.js"></script>
+</head>
+
+<body>
+	<input type="file" style="width: 500px; font-size: 50px;" onchange="ccvLodeVideo(this)">
+	<p id="ccvVideo_time" style="font-size: 100px;">00:00:00/00:00:00</p>
+	<p id="ccvVideo_text" style="font-size: 100px;">00:00:00/00:00:00</p>
+
+
+<!--
+	<button onclick="AudioContext_Ready()" style="font-size: 80px;">AudioContext(記得要按)</button>
+	<button onclick="ccvClearArray()" style="font-size: 20px;">ClearArray(想到可以按)</button>
+-->
+
+	<div>
+		<button onclick="ccvVideo_Play()" style="font-size: 50px;">Play(P)</button>
+		<button onclick="ccvVideo_Pause()" style="font-size: 50px;">Pause(P)</button>
+		<button onclick="ccvVideo_Return()" style="font-size: 50px;">Return(R)</button>
+		<button onclick="ccvTable_Subtitle_add()" style="font-size: 50px;">Mark(M)</button>
+	</div>	
+	<canvas id="ccvCanvas_1" width="1280" height="720" style="border:2px solid"></canvas>
+	<br>
+	<canvas id="ccvCanvas_timeline" width="1280" height="40" style="border:2px solid"></canvas>
+	<br>
+	<button onclick="ccvVideo_Output_Button()" style="font-size: 60px;">Output</button>
+	<button onclick="ccvFont_change()" style="font-size: 60px;" id="ccvFont">Font</button><br>
+	<button onclick="ccvText_write()" style="font-size: 60px;" id="ccvFont">write</button><br>
+	<canvas id="ccvCanvas_2"  style="display:none" width="1280" height="720"></canvas>
+	<canvas id="ccvCanvas_Mask" style="display:none" width="1280" height="720"></canvas>
+	<table id="ccvTable" border="8"></table>
+	<div>
+		<h1>猴子大概看不懂的使用教學</h1>
+		<ol style="font-size: 30px;">
+			<li>選擇一個影片檔</li>
+			<li>按下Play鍵</li>
+			<li>聽歌，順便檢查你剪的好不好，要聽到歌曲完全結束</li>
+			<li>放完一遍後直接按下Output輸出，輸出時把電腦擺在地上繞著它學鵪鶉叫，這會有助於幫開發者提供生活笑料</li>
+			<li>完成後檢查一下有沒有卡頓的問題，有的話請告訴我</li>
+			<li>最後你將下定決心去學 HTML, CSS, JavaScript，走上Canvas的道路，開始寫程式剪歌</li>
+		</ol>
+		<ul style="font-size: 30px;">
+			<li>注意，謝謝你的注意</li>
+			<li>出現問題請按F12開啟主控台，截圖給我看</li>
+			<li>輸出一律是 1280*720, 29.976 fps，就先這樣吧</li>
+			<li>字形：Microsoft JhengHei、setofont</li>
+		</ul>
+	</div>
+	<button onclick="ccvVideo_Go()">GO</button><br>
+	<video id="ccvVideo" style="display:none" width="1280" height="720"></video>
+	<video id="ccvVideo_2" style="display:none" width="1280" height="720"></video>
+	<!--
+	<canvas id="ccvCanvas_Screentone_20" width="1280" height="720"></canvas>
+	<canvas id="ccvCanvas_Screentone_40" width="1280" height="720"></canvas>
+	<canvas id="ccvCanvas_Screentone_60" width="1280" height="720"></canvas>
+	<canvas id="ccvCanvas_Screentone_80" width="1280" height="720"></canvas>
+-->
+	<p>
+		作者：林冠宇(多力多滋(立茲))<br>
+		聯絡我<br>
+		電話：0960-629-148<br>
+		噗浪：@david87001<br>
+		信箱：david87001@gmail.com<br>
+	</p>
+	<p>請使用Firefox、Opera、Chrome或Microsoft Edge瀏覽本站</p>
+	<!--<script src="ccvScreentone.js"></script>-->
+	<script src="Canvas Create Video.js"></script>
+</body>
+
+</html>

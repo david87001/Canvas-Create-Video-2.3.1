@@ -1,0 +1,17 @@
+/*
+ * ----------------------------------------------------------------------------
+ * "THE Doritos-WARE LICENSE" (Revision 1):
+ * david87001 wrote this file.  As long as you retain this notice you
+ * can do whatever you want with this stuff. If we meet some day, and you think
+ * this stuff is worth it, you can buy me a Doritos in return.   LIN GUAN-YU
+ * ----------------------------------------------------------------------------
+ */
+/*
+ * --------------------------------------------------------------
+ * 「多力多滋軟體協定」（第一版）：
+ * david87001編寫了此檔案。只要你還保留本協定文字，你
+ * 可以使用此軟體做任何事。如果我們在某一天相遇了，而且你認為
+ * 此軟體有價值，你可以為我買一包多力多滋來回報我。林冠宇
+ * david87001@gmail.com
+ * --------------------------------------------------------------
+ */
